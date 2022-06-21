@@ -82,19 +82,19 @@ final class ScrollController {
 
     // For debugging
 
-    guard let oldValue = change.oldValue else { return }
-
-    guard isLocking else {
-      return
-    }
-
-    guard scrollView.contentOffset != oldValue else { return }
-
-    guard oldValue != previousValue else { return }
-
-    previousValue = scrollView.contentOffset
-
-    scrollView.setContentOffset(oldValue, animated: false)
+//    guard let oldValue = change.oldValue else { return }
+//
+//    guard isLocking else {
+//      return
+//    }
+//
+//    guard scrollView.contentOffset != oldValue else { return }
+//
+//    guard oldValue != previousValue else { return }
+//
+//    previousValue = scrollView.contentOffset
+//
+//    scrollView.setContentOffset(oldValue, animated: false)
   }
 
 }
